@@ -1,0 +1,32 @@
+{
+  "name": "failflare",
+  "version": "0.0.1",
+  "description": "Automatically monitors Cloudflare status and toggles proxies for your domains.",
+  "license": "MIT",
+  "author": "kasper <ofek4430@gmail.com> (https://kasper24.github.io/portfolio)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "failflare": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": [
+    "cloudflare",
+    "proxy",
+    "failover",
+    "cli"
+  ],
+  "dependencies": {
+    "env-paths": "^3.0.0",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.2.2"
+  }
+}
